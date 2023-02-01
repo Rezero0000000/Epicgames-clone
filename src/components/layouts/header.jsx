@@ -1,11 +1,13 @@
 import React from "react";
 import Navbar from "../molecules/navbar.jsx"
+import Search from "../molecules/Search.jsx";
 
 const Header = () => {
   return (
     <>
       <header>
-        <Navbar/>
+        <Navbar />
+        <Search />
       </header>
     </>
   )

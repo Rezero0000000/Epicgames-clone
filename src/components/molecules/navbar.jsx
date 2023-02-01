@@ -51,7 +51,7 @@ const Navbar = () => {
               </div>
 
 {/* Sidebar begin-xs */}
-              <div className={`absolute h-[38.2rem] xs:h-[40rem] w-[90%] md:hidden pt-5 bg-[#2A2A2A] top-[3.3rem] flex flex-col justify-between transition-all       duration-500 ease-in ${open ? "right-0" : "-right-72 xs:-right-[29rem]" }`}>
+              <div className={`absolute z-[999] h-[38.2rem] xs:h-[40rem] w-[90%] md:hidden pt-5 bg-[#2A2A2A] top-[3.3rem] flex flex-col justify-between transition-all       duration-500 ease-in ${open ? "right-0" : "-right-72 xs:-right-[29rem]" }`}>
                 <ul className="flex flex-col text-sm font-[500]">
                   {
                     links.map(link => (
