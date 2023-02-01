@@ -23,16 +23,35 @@ const Navbar = () => {
     <> 
         <nav className="flex fixed w-full bg-[#2A2A2A] text-white items-center justify-between">
 
-          <div className="flex items-center">
+          <div className="flex items-center md:w-full">
               <div className="px-5 py-2">
                 <img src="/images/eg-logo-light.svg" className="w-8"/>
               </div>
 
-              <div className="bg-[#007DFC] absolute p-[0.7rem] right-0" onClick={showSidebar} >
+              <div className="bg-[#007DFC] md:hidden absolute p-[0.7rem] right-0" onClick={showSidebar} >
                 <HamburgerMenu />
               </div>
+              <div className="flex justify-between md:flex hidden   w-full">
+                <ul className="flex text-[12px] items-center font-[400]">
+                    {
+                      links.map(link => (
+                        link.id == 1 ? <li key={link.id} className=" text-[#fff] mx-5 ">{link.name}</li> : <li key={link.id} className="mx-5 text-[#A7A7A7] ">{link.name}</li>
+                      ))
+                    }
+                  </ul>
+                  <div className="flex text-[12px] font-semibold">
+                    <div  className="py-4 px-3 flex items-center">
+                      <User/>
+                      <p className="ml-3">SIGN IN</p>
+                    </div>
+                    <div className="bg-[#007DFC] py-4 px-5 flex  items-center ">
+                       <p >GET EPIC GAMES</p>
+                    </div>
+                  </div>
+              </div>
 
-              <div className={`absolute h-[38.2rem] w-[90%] pt-5 bg-[#2A2A2A] top-[3.3rem] flex flex-col justify-between transition-all       duration-500 ease-in ${open ? "right-0" : "-right-72 xs:-right-[29rem]" }`}>
+{/* Sidebar begin-xs */}
+              <div className={`absolute h-[38.2rem] xs:h-[40rem] w-[90%] md:hidden pt-5 bg-[#2A2A2A] top-[3.3rem] flex flex-col justify-between transition-all       duration-500 ease-in ${open ? "right-0" : "-right-72 xs:-right-[29rem]" }`}>
                 <ul className="flex flex-col text-sm font-[500]">
                   {
                     links.map(link => (
