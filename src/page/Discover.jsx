@@ -1,7 +1,7 @@
 import React from "react"
-import Header from "../components/layouts/header"
+import Header from "../components/organism/header"
 
-const Home = () => {
+const Discover = () => {
   return (
     <>
       <div className="bg-[#121212]">
@@ -14,4 +14,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Discover

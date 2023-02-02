@@ -5,7 +5,7 @@ import User from "../icons/User";
 
 const Navbar = () => {
 
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
 
   function showSidebar () {
     setOpen(!open)

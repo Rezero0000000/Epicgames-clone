@@ -1,11 +1,11 @@
 import React from 'react'
-import Home from './page/Home'
+import Discover from './page/Discover'
 
 function App() {
 
   return (
     <>
-      <Home/>
+      <Discover />
     </>
   )
 }
