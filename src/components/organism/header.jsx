@@ -5,7 +5,7 @@ import Search from "../molecules/Search.jsx";
 const Header = () => {
   return (
     <>
-      <header>
+      <header className="fixed w-full">
         <Navbar />
         <Search />
       </header>

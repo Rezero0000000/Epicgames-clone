@@ -1,14 +1,15 @@
 import React from "react"
 import Header from "../components/organism/header"
+import Jumbotron from "../components/organism/jumbotron"
 
 const Discover = () => {
   return (
     <>
       <div className="bg-[#121212]">
         <Header />
-        <div className="h-[43rem]">
-
-        </div>
+      </div>
+      <div className="pt-40">
+        <Jumbotron />
       </div>
     </>
   )
