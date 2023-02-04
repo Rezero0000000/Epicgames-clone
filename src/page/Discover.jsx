@@ -5,7 +5,7 @@ import Jumbotron from "../components/organism/jumbotron"
 const Discover = () => {
   return (
     <>
-      <div className="bg-[#121212]">
+      <div className="">
         <Header />
       </div>
       <div className="pt-40">
