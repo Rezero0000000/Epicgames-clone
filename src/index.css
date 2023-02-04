@@ -9,7 +9,9 @@
 }
 
 @layer components {
-      
+  .flex-centered {
+      @apply flex items-center justify-center;
+  }
   .nav-container {
     @apply fixed flex
         h-12 w-full 
@@ -57,7 +59,7 @@
   .get-epic-games-button {
     @apply flex items-center justify-center 
         px-6 pt-1 md:pt-0
-        bg-blue-500 font-bold
+        bg-[#007DFC]  font-bold
         bg-opacity-90 hover:bg-opacity-100 
         h-full tracking-widest;
   }

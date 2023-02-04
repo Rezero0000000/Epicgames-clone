@@ -1,6 +1,5 @@
 import React from "react";
-import Navbar from "../molecules/navbar.jsx"
-import Tes from "../molecules/Tes.jsx";
+import Navbar from "../molecules/Navbar.jsx"
 import Search from "../molecules/Search.jsx";
 
 const Header = () => {
