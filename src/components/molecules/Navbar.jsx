@@ -17,8 +17,7 @@ const Navbar = () => {
 
   function showSidebar () {
     setOpen(!open)
-  }
-
+  }  
 
     return (
         <>
