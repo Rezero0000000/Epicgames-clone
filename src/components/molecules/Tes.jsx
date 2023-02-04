@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import Globe from "../icons/Globe";
 import User from "../icons/User";
+import HamburgerMenu from "../icons/HamburgerMenu";
 
-const Tes = () => {
+const Navbar = () => {
     
   const links = [
     { id: 1, name: "STORE", url: "/" },
@@ -12,13 +13,21 @@ const Tes = () => {
     { id: 5, name: "UNREAL ENGINE", url: "/" }
   ]
 
+  const [open, setOpen] = useState(true)
+
+  function showSidebar () {
+    console.log("HI")
+    setOpen(!open)
+  }
+
+
     return (
         <>
              <nav className="nav-container">
                 <div>
                     {/* <img src="/images/eg-logo-light.svg" classNam="w-2"/> */}
                 </div>
-                <div className="nav-menu md:translate-x-0">
+                <div className={`nav-menu md:translate-x-0 ${open? "translate-x-full" : "translate-x-0"}`}>
                 <ul className="nav-menu-list">
                     {
                     links.map(link => (
@@ -40,9 +49,12 @@ const Tes = () => {
                     <a href="#" className="get-epic-games-button">GET EPIC GAMES</a>
                 </div>
                 </div>
+                <div className="bg-[#007DFC] md:hidden absolute p-[0.7rem] right-0" onClick={showSidebar} >
+                <HamburgerMenu />
+              </div>
             </nav>
         </>
     )
 }
 
-export default Tes;
+export default Navbar;

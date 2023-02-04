@@ -13,7 +13,7 @@
   .nav-container {
     @apply fixed flex
         h-12 w-full 
-        bg-gray-500 text-white
+        bg-[#2A2A2A] text-white
         text-[0.7rem]
         z-40 select-none;
   }
@@ -25,7 +25,7 @@
         w-[90%] md:w-full
         justify-between gap-5
         pt-14 md:pt-0 pl-0 md:pl-5 flex-grow
-        bg-gray-500
+        bg-[#2A2A2A]
         transition-transform duration-300;
   }
 

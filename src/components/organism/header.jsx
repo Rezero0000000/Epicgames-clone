@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
       <header className="fixed w-full">
-        <Tes />
+        <Navbar />
         <Search />
       </header>
     </>
