@@ -2,8 +2,7 @@ import React from "react";
 import BigCardGames from "../molecules/BigCardGames";
 
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-
+import {Pagination, Scrollbar } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -16,7 +15,7 @@ const Jumbotron = () => {
         <>
             <Swiper
                 // install Swiper modules
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                modules={[Pagination, Scrollbar]}
                 spaceBetween={50}
                 slidesPerView={1}
                 pagination={{ clickable: true }}
