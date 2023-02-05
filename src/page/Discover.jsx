@@ -2,6 +2,8 @@ import React from "react"
 import Header from "../components/organism/header"
 import Jumbotron from "../components/organism/jumbotron"
 import Sale from "../components/organism/Sale"
+import GamePost from "../components/organism/GamePosts"
+import FreeGames from "../components/organism/FreeGames"
 
 const Discover = () => {
   return (
@@ -15,6 +17,12 @@ const Discover = () => {
       <div>
         <Sale />
       </div>
+      <section className="mt-16">
+        <GamePost />
+      </section>
+      <section>
+        <FreeGames />
+      </section>
     </>
   )
 }
