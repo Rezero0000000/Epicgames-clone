@@ -38,7 +38,7 @@ const Navbar = () => {
                       className="flex flex-row-reverse w-full h-full md:flex-row md:w-auto bg-epic-gray-50 md:bg-transparent"
                       >
                       <button className="w-1/3 h-full mr-5 flex-centered md:w-auto opacity-70 hover:opacity-100">
-                          <Globe className="w-8 h-8 md:w-6 md:h-6" />
+                          <Globe  />
                       </button>
                       <a to="/signin" className="flex-centered signin-button">
                           <User className="w-7 md:w-5 h-7 md:h-5" />SIGN IN

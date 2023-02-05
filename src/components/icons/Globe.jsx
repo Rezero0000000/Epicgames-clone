@@ -7,9 +7,7 @@ const Globe = () => {
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
             role="img"
-            className="iconify iconify--ph"
-            width="32"
-            height="32"
+            className="w-8 h-8 md:w-6 md:h-6 "
             preserveAspectRatio="xMidYMid meet"
             viewBox="0 0 256 256"
             >

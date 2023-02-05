@@ -17,16 +17,25 @@ const Search = () => {
     return (
         <>
             <div className="bg-[#121212] bg-opacity-[0.85] fixed top-12 w-full">
-                <div className="backdrop-blur-xl text-white border-b border-[#343434] pt-4 pb-7  flex justify-center items-center text-sm font-bold w-full text-center top-14">
-                    <div className="" onClick={openFilter}>
-                        <p className="text-[10px] text-[#868686]">EPIC GAMES STORE</p>
+                <div className="backdrop-blur-xl text-white border-b border-[#343434] pt-4 pb-7 flex md:py-5 justify-center md:justify-between md:px-20 items-center text-sm font-bold w-full text-center top-14">
+                    <div className="md:hidden" onClick={openFilter}>
+                        <p className="text-[10px] text-[#868686] md:hidden">EPIC GAMES STORE</p>
                         <p className="">Discover</p>
                     </div>
-                    <div className="absolute right-5">
+                    <div className="hidden md:block">
+                        <ul className="text-center flex text-white ">
+                            {
+                                links.map( link => (
+                                  link.id == 2 ? <li className="font-normal mr-10 text-[#858585]" key={link.id}>{link.title}</li> : <li className="font-normal mr-10" key={link.id}>{link.title}</li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                    <div className="absolute right-5 md:static">
                         <SearchIcon />
                     </div>
                 </div>
-                <div className={`bg-[#121212] absolute w-full top-[5.3rem] z-20 ${open ? "block"  : "hidden" }`}>
+                <div className={`bg-[#121212] absolute md:hidden w-full top-[5.3rem] z-20 ${open ? "block"  : "hidden" }`}>
                     <ul className="text-center text-white py-10">
                         {
                             links.map( link => (
