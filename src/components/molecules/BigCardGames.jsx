@@ -3,8 +3,8 @@ import React from "react";
 const BigCardGames = () => {
     return (
         <>  
-            <div className=" text-white">
-              <div className="rounded-xl relative xs:rounded-none h-[27.5rem] w-full md:w-[30rem] bg-cover bg-center bg-gradient-black" style={{backgroundImage: `url(/images/games/dishonored.webp)`}}>
+            <div className=" text-white w-full ">
+              <div className=" relative h-[27.5rem] bg-cover bg-center rounded-2xl" style={{backgroundImage: `url(/images/games/dishonored.webp)`}}>
                 <div className=" absolute px-5 inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black/80 md:from-black/40 to-transparent"></div>
                 <div className=" absolute bottom-14 px-5 left-5 md:left-8 text-sm md:font-bold w-[80%] md:w-[40%]">
                   <div>

@@ -12,11 +12,12 @@ const Jumbotron = () => {
     return (
         <>
             <div className="md:flex justify-center">
-                <div className="md:w-[70%] w-full">
+                <div className="md:w-[70%] w-full ">
                     <Swiper
                         // install Swiper modules
                         modules={[Pagination, Scrollbar]}
                         slidesPerView={1}
+                        spaceBetween={15}
                         pagination={{ clickable: true }}
                         scrollbar={{ draggable: true }}
                         onSwiper={(swiper) => console.log(swiper)}
