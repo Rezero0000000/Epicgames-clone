@@ -3,9 +3,10 @@ import React from "react";
 const GameCard = () => {
     return (
         <>
-            <div className="w-36 mt-7 ">
-                <div className="h-48 bg-cover rounded-lg bg-center" style={{ backgroundImage: "url('/images/games/dishonored.webp')"}}></div>
-
+            <div className="ml-7 group w-full">
+                <div className="relative mb-1.5 overflow-hidden rounded-md ar-3/4 bg-white/80">
+                    <img src="/images/games/dishonored.webp" alt="" className="object-cover w-full h-full transition-opacity duration-200 hover:opacity-90"/>
+                </div>
                 <div>
                     <div className="text-sm mt-5"> 
                         <h2>Dishonored</h2>

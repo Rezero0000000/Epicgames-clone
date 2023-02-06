@@ -6,19 +6,39 @@ import GameCard from "../molecules/GameCard";
 const Sale = () => {
     return (
         <>
-            <section className="text-white px-5 mt-[4.5rem]">
-                <div>
+            <section className="text-white mt-[4.5rem] md:px-20 lg:pl-32 lg:pr-36">
+                <div className="px-7">
                     <p>Game On Sale</p>
                 </div>
                 <Swiper
                     modules={[Pagination, Scrollbar]}
-                    spaceBetween={78}
                     slidesPerView={3}
                     pagination={{ clickable: true }}
+                    spaceBetween={20}
+                    breakpoints= {{
+                        480: {
+                        slidesPerGroup: 1,
+                        slidesPerView: 2,
+                        },
+                        768: {
+                        slidesPerGroup: 2,
+                        slidesPerView: 3,
+                        },
+                        1024: {
+                        slidesPerGroup: 3,
+                        slidesPerView: 4,
+                        },
+                        1280: {
+                        slidesPerGroup: 5,
+                        slidesPerView: 6,
+                        },
+                    }}
                     scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
+                    className=" mt-7 h-full"
                 >
+                    <SwiperSlide><GameCard /></SwiperSlide>
                     <SwiperSlide><GameCard /></SwiperSlide>
                     <SwiperSlide><GameCard /></SwiperSlide>
                     <SwiperSlide><GameCard /></SwiperSlide>
