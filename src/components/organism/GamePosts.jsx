@@ -14,9 +14,6 @@ const GamePost = () => {
                     slidesPerView={1}
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
-                    
                 >
                     <SwiperSlide><GameCardPost /></SwiperSlide>
                     <SwiperSlide><GameCardPost /></SwiperSlide>

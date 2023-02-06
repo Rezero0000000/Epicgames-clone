@@ -11,7 +11,7 @@ const Discover = () => {
       <div className="fixed z-20">
         <Header />
       </div>
-      <div className="pt-40 md:px-16 px-5">
+      <div className="pt-36 md:pt-32 md:px-8 px-5">
         <Jumbotron />
       </div>
       <div>

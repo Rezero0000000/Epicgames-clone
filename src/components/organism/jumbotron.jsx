@@ -20,8 +20,6 @@ const Jumbotron = () => {
                         spaceBetween={15}
                         pagination={{ clickable: true }}
                         scrollbar={{ draggable: true }}
-                        onSwiper={(swiper) => console.log(swiper)}
-                        onSlideChange={() => console.log('slide change')}
                     >
                         <SwiperSlide><BigCardGames/></SwiperSlide>
                         <SwiperSlide><BigCardGames/></SwiperSlide>

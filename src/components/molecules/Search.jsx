@@ -16,8 +16,8 @@ const Search = () => {
 
     return (
         <>
-            <div className="bg-[#121212] bg-opacity-[0.85] fixed top-12 w-full">
-                <div className="backdrop-blur-xl text-white border-b border-[#343434] pt-4 pb-7 flex md:py-5 justify-center md:justify-between md:px-20 items-center text-sm font-bold w-full text-center top-14">
+            <div className="bg-[#121212] bg-opacity-[0.93] fixed top-12 w-full md:py-3">
+                <div className="backdrop-blur-sm text-white border-b md:border-none border-[#343434] pt-4 pb-7 flex md:py-5 justify-center md:justify-between md:px-16 items-center text-sm font-bold w-full text-center top-14">
                     <div className="md:hidden" onClick={openFilter}>
                         <p className="text-[10px] text-[#868686] md:hidden">EPIC GAMES STORE</p>
                         <p className="">Discover</p>

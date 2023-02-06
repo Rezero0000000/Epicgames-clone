@@ -23,7 +23,7 @@
   }
   .nav-container {
     @apply fixed flex
-        h-12 w-full 
+        h-[3.2rem] w-full 
         bg-[#2A2A2A] text-white
         text-[0.7rem]
         z-40 select-none;

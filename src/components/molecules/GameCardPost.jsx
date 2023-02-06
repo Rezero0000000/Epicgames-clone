@@ -4,8 +4,8 @@ const GameCardPost = () => {
     return (
         <>
             <div className="px-5 w-full h-full ">
-            <a href="#" class="block w-full overflow-hidden ar-16/9 bg-white/60 rounded-2xl">
-             <img src="/images/games/dishonored.webp"  class="object-cover w-full h-full hover:opacity-90 transition"/>
+            <a href="#" className="block w-full overflow-hidden ar-16/9 bg-white/60 rounded-2xl">
+             <img src="/images/games/dishonored.webp"  className="object-cover w-full h-full hover:opacity-90 transition"/>
             </a>
                 <div className="text-white mt-7 ">
                     <h2 className="">Dishonored</h2>

@@ -16,8 +16,6 @@ const FreeGames = () => {
                     slidesPerView={2}
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
                 >
                     <SwiperSlide>
                         <div className="w-[23rem] mt-7 text-white text-sm">

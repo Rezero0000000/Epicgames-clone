@@ -38,8 +38,6 @@ const Sale = () => {
                         },
                     }}
                     scrollbar={{ draggable: true }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
                     className=" mt-7 h-full"
                 >
                     <SwiperSlide><GameCard /></SwiperSlide>
