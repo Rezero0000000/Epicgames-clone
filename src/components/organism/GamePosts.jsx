@@ -6,12 +6,12 @@ import GameCardPost from "../molecules/GameCardPost";
 const GamePost = () => {
     return (
         <>      
-            <div className="w-full h-full pl-5 md:pl-3 pr-36 md:pr-0">
+            <div className="w-full h-full">
 
             <Swiper
                     modules={[Pagination, Scrollbar]}
-                    spaceBetween={218}
-                    slidesPerView={2}
+                    spaceBetween={20}
+                    slidesPerView={1}
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => console.log(swiper)}

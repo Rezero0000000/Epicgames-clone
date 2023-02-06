@@ -16,9 +16,13 @@ const Sale = () => {
                     pagination={{ clickable: true }}
                     spaceBetween={20}
                     breakpoints= {{
+                        0: {
+                        slidesPerGroup: 1,
+                        slidesPerView: 3,
+                        },
                         480: {
                         slidesPerGroup: 1,
-                        slidesPerView: 2,
+                        slidesPerView: 3,
                         },
                         768: {
                         slidesPerGroup: 2,
