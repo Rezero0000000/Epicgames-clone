@@ -5,14 +5,9 @@ const FormInput = (porps) => {
 
     return (
         <> 
-        <div className="relative w-full p-1 px-5 border mt-7 rounded-md border-white/30 z-20">
-        <button id="headlessui-listbox-button-13" type="button" aria-haspopup="true" aria-expanded="false" className="relative flex items-center justify-between w-full gap-2 py-3 text-sm group">
-            <div className="text-left">
-                {/* <div className="text-white/60">Country <span className="text-red-400">*</span></div> */}
-                <div>{title}</div>
+            <div>
+                <input type="text" className="bg-[#202020] w-full rounded-md py-5 text-sm placeholder:px-2 placeholder:font-semibold placeholder:text-[#BDC5C3]" placeholder={title}/>
             </div>
-        </button>
-         </div>
         </>
     )
 }

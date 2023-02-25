@@ -17,12 +17,6 @@
     }
 }
 
-
-input[type="checkbox"] {
-  background-color: red;
-  border: 1px solid red;
-}
-
 @layer components {
   .flex-centered {
       @apply flex items-center justify-center;
@@ -83,5 +77,4 @@ input[type="checkbox"] {
 body {
   background-color: #121212;
 }
-
 
