@@ -11,12 +11,17 @@ import {
 // Components
 import Discover from './page/Discover'
 import Login from './page/Login';
+import SignIn from './page/SignIn';
 import './index.css'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Discover />,
+  },
+  {
+    path: "signin",
+    element: <SignIn/>
   },
   {
     path: "login",
