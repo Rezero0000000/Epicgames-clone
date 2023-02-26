@@ -6,7 +6,7 @@ const FormInput = (porps) => {
     return (
         <> 
             <div>
-                <input type="text" className="bg-[#202020] w-full rounded-md py-5 text-sm placeholder:px-2 placeholder:font-semibold placeholder:text-[#BDC5C3]" placeholder={title}/>
+                <input type="text" className="bg-[#202020] w-full rounded-md py-5 text-sm placeholder:px-2 placeholder:font-semibold placeholder:text-[#BDC5C3] border-[#606060]" placeholder={title}/>
             </div>
         </>
     )

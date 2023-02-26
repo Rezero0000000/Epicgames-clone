@@ -29,9 +29,9 @@ const Login = () => {
                     </form>
                 </div>
 
-                <div className="text-center mt-10 text-sm text-[#A0A0A0]">
+                <div className="text-center mt-10 text-sm text-[#A0A0A0] mb-5">
                     <a href="" className="text-white underline underline-offset-2"> Privacy Policy</a>
-                    <p className="mt-6">Don't have an Epic Games account? <a href="" className="text-white">Sign Up</a></p>
+                    <p className="mt-6">Don't have an Epic Games account? <a href="/signin" className="text-white">Sign Up</a></p>
                     <p>Back to <a href="/" className="text-white">Home</a></p>
                 </div>
             </div>
