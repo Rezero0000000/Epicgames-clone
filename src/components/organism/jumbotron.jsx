@@ -59,4 +59,4 @@ const Jumbotron = () => {
     )
 }
 
-export default Jumbotron
+export default Jumbotron;
