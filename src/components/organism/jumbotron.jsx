@@ -12,7 +12,6 @@ const Jumbotron = () => {
 
     const [dataGame, setDataGame] = useState([])
     useEffect(() => {
-        console.log('s')
         fetch("/data/games.json")
         .then(response => {
            return response.json();
