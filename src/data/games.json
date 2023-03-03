@@ -2,31 +2,37 @@
     {   
         "id": 1,
         "title": "Battlefield 2042",
-        "description": "Don't miss a moment of the Battlefield 2042 Open Beta, start your pre-load now!"
+        "description": "Don't miss a moment of the Battlefield 2042 Open Beta, start your pre-load now!",
+        "image": "/images/games/battlefield.webp"
     },
     {
         "id": 2,
         "title": "Little Nightmare",
-        "description": "Immerse yourself in Little Nightmares, a dark whimsical tale that will confront you with your childhood fears! Help Six escape The Maw"
+        "description": "Immerse yourself in Little Nightmares, a dark whimsical tale that will confront you with your childhood fears! Help Six escape The Maw",
+        "image": "/images/games/little-nightmare.webp"
     },
     {
         "id": 3,
         "title": "Genshin Impact",
-        "description": "Update features the springtime tradition of Mondstadt, intros for new characters Dehya and Mika, and continues the story of the twin Travelers!"
+        "description": "Update features the springtime tradition of Mondstadt, intros for new characters Dehya and Mika, and continues the story of the twin Travelers!",
+        "image": "/images/games/ghensin-impact.webp"
     },
     {
         "id": 4,
         "title": "Elden Ring",
-        "description": "Elden Ring is an action role-playing game played in a third person perspective, with gameplay focusing on combat and exploration. It features elements similar to those found in other games developed by FromSoftware, such as the Dark Souls series, Bloodborne, and Sekiro: Shadows Die Twice."
+        "description": "Elden Ring is an action role-playing game played in a third person perspective, with gameplay focusing on combat and exploration. It features elements similar to those found in other games developed by FromSoftware, such as the Dark Souls series, Bloodborne, and Sekiro: Shadows Die Twice.",
+        "image": "/images/games/elden-ring.webp"
     },
     {
         "id": 5,
         "title": "Free Fire",
-        "description": "Free Fire is the ultimate survival shooter game available on mobile. Each 10-minute game places you on a remote island where you are pit against 49 other players, all seeking survival. Players freely choose their starting point with their parachute, and aim to stay in the safe zone for as long as possible."
+        "description": "Free Fire is the ultimate survival shooter game available on mobile. Each 10-minute game places you on a remote island where you are pit against 49 other players, all seeking survival. Players freely choose their starting point with their parachute, and aim to stay in the safe zone for as long as possible.",
+        "image": "/images/games/free-fire.webp"
     },
     {
         "id": 6,
         "title": "Kena bridge of spirits",
-        "description": "Kena, a young Spirit Guide, travels to an abandoned village in search of the sacred mountain shrine."
+        "description": "Kena, a young Spirit Guide, travels to an abandoned village in search of the sacred mountain shrine.",
+        "image": "/images/games/kena.webp"
     }
 ]
