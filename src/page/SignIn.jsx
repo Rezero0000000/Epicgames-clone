@@ -4,10 +4,10 @@ import FormInput from "../components/molecules/FormInput";
 const SignIn = () => {
     return (
         <>
-            <div className="bg-[#202020] w-full  sm:w-[29.5rem] mx-auto px-5 sm:px-14 my-9 text-white py-14  ">
+            <div className="bg-[#202020] w-full xs:w-[28.5rem] sm:w-[29rem] mx-auto px-5 sm:px-14 xs:my-8 text-white py-14 ">
                 <div>
                     <img src="/images/eg-logo-light.svg" className="w-[2.65rem] mx-auto" alt="" />
-                    <p className="text-[12px] font-bold mt-7">SIGN UP</p>
+                    <p className="text-center text-lg font-bold mt-16 ">Sign Up</p>
                 </div>
                 <div className="mt-5">
                     <form action="w-full ">

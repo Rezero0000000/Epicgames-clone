@@ -7,13 +7,10 @@ const Navbar = () => {
     
   const links = [
     { id: 1, name: "STORE", url: "/" },
-    { id: 2, name: "NEWS", url: "/" },
-    { id: 3, name: "FAQ", url: "/", },
-    { id: 4, name: "HELP", url: "/" },
-    { id: 5, name: "UNREAL ENGINE", url: "/" }
+    { id: 2, name: "Support", url: "/" },
   ]
 
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
 
   function showSidebar () {
     setOpen(!open)
@@ -22,16 +19,19 @@ const Navbar = () => {
     return (
         <>
              <nav className="nav-container pb-4 md:pb-0">
-                <div className="my-2 ml-5 ">
+                <div className="my-2 ml-5 z-50">
                     <img src="/images/eg-logo-light.svg" className="w-[1.93rem] opacity-[0.85]"/>
                 </div>
                 <div className={`nav-menu md:translate-x-0 ${open? "translate-x-full" : "translate-x-0"} `}>
-                  <ul className="nav-menu-list items-center text-[12px] font-semibold">
-                      {
+                  <ul className="nav-menu-list items-center text-sm sm:text-[12px] mt-3 sm:mt-0">
+                    {
                       links.map(link => (
-                        link.id == 1 ? <li key={link.id} className="pl-7 mb-3 md:mb-0 text-[#fff] md:w-auto w-full">{link.name}</li> : <li key={link.id} className="pl-7 text-[#A7A7A7] md:border-none border-t w-full py-2 md:w-auto border-[#343434]">{link.name}</li>
+                        link.id == 1 ? <li key={link.id} className="pl-7 sm:pl-2 mbnpm run dev-3 md:mb-0 text-[#fff] md:w-auto w-full">{link.name}</li> : <li key={link.id} className="pl-7 text-[#A7A7A7] md:border-none border-t w-full py-2 md:w-auto border-[#343434]">{link.name}</li>
                       ))
                     }
+                     <li className="pl-7 sm:pl-0 sm:ml-7 mb-3 md:mb-0 text-[#A7A7A7] md:w-auto w-full"><p className="sm:border-l sm:pl-6 sm:py-[0.35rem] sm:border-[#A7A7A7]">
+                     UNREAL ENGINE
+                      </p></li>
                   </ul>
                   <div className="nav-second-menu shadow-top md:shadow-none w-full md:w-auto">
                       <div

@@ -78,3 +78,8 @@ body {
   background-color: #121212;
 }
 
+.search-background {
+  opacity: 0;
+  background-color: red;
+}
+

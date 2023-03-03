@@ -5,24 +5,27 @@ const Search = () => {
 
     const links = [
         {id:1, title: "Discover", url: "/discover"},
-        {id:2, title: "Browse", url: "/browse"}
+        {id:2, title: "Browse", url: "/browse"},
+        {id:2, title: "News", url: "/news"}
     ]
 
-    const [open, setOpen] = useState(false)
+    const [openSearch, setOpenSearch] = useState(true)
 
     function openFilter () {
-        setOpen(!open)
+        setOpenSearch(!openSearch)
     }
-
     return (
         <>
-            <div className="bg-[#121212] bg-opacity-[0.93] fixed top-12 w-full md:py-3">
-                <div className="backdrop-blur-sm text-white border-b md:border-none border-[#343434] pt-4 pb-7 flex md:py-5 justify-center md:justify-between md:px-16 items-center text-sm font-bold w-full text-center top-14">
-                    <div className="md:hidden" onClick={openFilter}>
-                        <p className="text-[10px] text-[#868686] md:hidden">EPIC GAMES STORE</p>
+            <div className="bg-[#121212]  bg-opacity-[0.93] fixed top-12 w-full lg:py-3">
+                <div className="backdrop-blur-sm text-white py-7  flex lg:py-5 justify-center lg:justify-between lg:px-16 items-center text-[16px] w-full text-center top-14">
+                    <div className="absolute left-8 lg:static">
+                        <SearchIcon />
+                    </div>
+
+                    <div className="lg:hidden" onClick={openFilter}>
                         <p className="">Discover</p>
                     </div>
-                    <div className="hidden md:block">
+                    <div className="hidden lg:block">
                         <ul className="text-center flex text-white ">
                             {
                                 links.map( link => (
@@ -31,19 +34,19 @@ const Search = () => {
                             }
                         </ul>
                     </div>
-                    <div className="absolute right-5 md:static">
-                        <SearchIcon />
-                    </div>
+           
                 </div>
-                <div className={`bg-[#121212] absolute md:hidden w-full top-[5.3rem] z-20 ${open ? "block"  : "hidden" }`}>
-                    <ul className="text-center text-white py-10">
+                <div className={`bg-[#121212] absolute lg:hidden w-full top-[5rem] z-20 ${openSearch ? "block"  : "hidden" }`}>
+                    <ul className=" pl-8 text-white py-5 xs:py-6">
                         {
                             links.map( link => (
-                                    <li className="py-7" key={link.id}>{link.title}</li>
+                                link.id !== 1 ? <li className="py-5 text-[#8C8C8C] border-t border-[#2A2A2A]" key={link.id}>{link.title}</li>
+                                : <li className="py-5" key={link.id}>{link.title}</li>
                             ))
                         }
                     </ul>
                 </div>
+                <button className={`w-full h-[34rem] aboslute  search-background ${openSearch ? "block"  : "hidden" }`}></button>
             </div>
         </>
     )
