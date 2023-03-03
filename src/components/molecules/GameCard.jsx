@@ -5,7 +5,7 @@ const GameCard = () => {
         <>
             <div className="ml-7 group w-full">
                 <div className="relative mb-1.5 overflow-hidden rounded-md ar-3/4 bg-white/80">
-                    <img src="/images/games/dishonored.webp" alt="" className="object-cover w-full h-full transition-opacity duration-200 hover:opacity-90"/>
+                    <img src="/images/games/genshin-impact.webp" alt="" className="object-cover w-full h-full transition-opacity duration-200 hover:opacity-90"/>
                 </div>
                 <div>
                     <div className="text-sm mt-5"> 

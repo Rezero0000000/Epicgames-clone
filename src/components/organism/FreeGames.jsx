@@ -20,7 +20,7 @@ const FreeGames = () => {
                     <SwiperSlide>
                         <div className="w-[23rem] mt-7 text-white text-sm">
                             <div className="">
-                                <img src="/images/games/dishonored.webp" className="rounded-t-lg" alt="" />
+                                <img src="/images/games/genshin-impact.webp" className="rounded-t-lg" alt="" />
                                 <div className="bg-[#007DFC] rounded-b-lg text-center font-bold py-1">FREE NOW</div>
                             </div>
                             <div className="mt-7">
@@ -33,7 +33,7 @@ const FreeGames = () => {
                     <SwiperSlide>
                         <div className="w-[23rem] mt-7 text-white text-sm">
                             <div className="">
-                                <img src="/images/games/dishonored.webp" className="rounded-t-lg" alt="" />
+                                <img src="/images/games/genshin-impact.webp" className="rounded-t-lg" alt="" />
                                 <div className="bg-[#007DFC] rounded-b-lg text-center font-bold py-1">FREE NOW</div>
                             </div>
                             <div className="mt-7">
@@ -46,7 +46,7 @@ const FreeGames = () => {
                     <SwiperSlide>
                         <div className="w-[23rem] mt-7 text-white text-sm">
                             <div className="">
-                                <img src="/images/games/dishonored.webp" className="rounded-t-lg" alt="" />
+                                <img src="/images/games/genshin-impact.webp" className="rounded-t-lg" alt="" />
                                 <div className="bg-[#007DFC] rounded-b-lg text-center font-bold py-1">FREE NOW</div>
                             </div>
                             <div className="mt-7">
