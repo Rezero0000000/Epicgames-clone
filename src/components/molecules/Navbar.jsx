@@ -10,7 +10,7 @@ const Navbar = () => {
     { id: 2, name: "Support", url: "/" },
   ]
 
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
 
   function showSidebar () {
     setOpen(!open)
