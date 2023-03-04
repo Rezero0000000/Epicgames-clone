@@ -4,6 +4,7 @@ import Jumbotron from "../components/organism/jumbotron"
 import Sale from "../components/organism/Sale"
 import GamePost from "../components/organism/GamePosts"
 import FreeGames from "../components/organism/FreeGames"
+import GameStatus from "../components/molecules/GameStatus"
 
 const Discover = () => {
   return (
@@ -22,6 +23,9 @@ const Discover = () => {
       </section>
       <section className="md:px-12 lg:px-20 xl:px-36  mt-16">
         <FreeGames />
+      </section>
+      <section className="text-white md:px-12 lg:px-20 xl:px-36  py-16">
+        <GameStatus />
       </section>
     </>
   )
