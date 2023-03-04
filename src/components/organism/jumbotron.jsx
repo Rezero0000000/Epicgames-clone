@@ -10,16 +10,17 @@ import 'swiper/css';
 
 const Jumbotron = () => {
 
-    const [dataGame, setDataGame] = useState([])
+    const [games, setGames] = useState([])
     useEffect(() => {
-        fetch("/data/games.json")
-        .then(response => {
-           return response.json();
-        }).then(data => {
-            setDataGame(data)
-        })
+        const getGames = async () => {
+            const fetchGames = await fetch("/data/games.json");
+            const jsonGames = await fetchGames.json();
+            setGames(jsonGames);
+        }
+        getGames();
     },[]);
 
+    
 
     return (
         <>
@@ -34,20 +35,20 @@ const Jumbotron = () => {
                         scrollbar={{ draggable: true }}
                     >
                     {
-                        dataGame.map(game =><SwiperSlide key={game.id}><BigCardGames/></SwiperSlide> )
+                        games.map(game =><SwiperSlide key={game.id}><BigCardGames/></SwiperSlide> )
                     }                        
                   </Swiper>
                 </div>
                 <div className="ml-5 hidden md:block">
                 {
-                    dataGame.map(game => 
+                    games.map(game => 
                     game.id == 1 ? 
                     <div className="text-white flex items-center " key={game.id}>
-                        <img src="/images/games/genshin-impact.webp" className="w-full w-12 rounded-lg h-14 object-cover" loading="lazy" alt="" />
+                        <img src={game.image} className="w-full w-12 rounded-lg h-14 object-cover" loading="lazy" alt="" />
                         <p className="text-[13px] ml-3 mr-5">{game.title}</p>
                     </div> :
                     <div className="text-white flex items-center mt-5" key={game.id}>
-                        <img src="/images/games/genshin-impact.webp" className="w-full w-12 rounded-lg h-14 object-cover" loading="lazy" alt="" />
+                        <img src={game.image} className="w-full w-12 rounded-lg h-14 object-cover" loading="lazy" alt="" />
                         <p className="text-[13px] ml-3 mr-5">{game.title}</p>
                     </div> 
                     )

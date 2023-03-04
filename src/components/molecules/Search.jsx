@@ -15,7 +15,6 @@ const Search = () => {
         setOpen(!open)
     }
 
-    console.log('s')
     return (
         <>
             <div className="bg-[#121212]  bg-opacity-[0.93] fixed top-12 w-full lg:py-3">

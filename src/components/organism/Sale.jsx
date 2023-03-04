@@ -1,9 +1,21 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Pagination, Scrollbar } from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
 import GameCard from "../molecules/GameCard";
 
 const Sale = () => {
+    const [games, setGames] = useState([]);
+
+    useEffect(() => {
+        const getGames = async () => {
+            const fetchGames = await fetch("/data/games.json");
+            const jsonGames  = await fetchGames.json();
+            setGames(jsonGames);
+        }
+
+        getGames();
+    }, []);
+
     return (
         <>
             <section className="text-white mt-[4.5rem] md:px-20 lg:pl-32 lg:pr-36">
@@ -40,12 +52,11 @@ const Sale = () => {
                     scrollbar={{ draggable: true }}
                     className=" mt-7 h-full"
                 >
-                    <SwiperSlide><GameCard /></SwiperSlide>
-                    <SwiperSlide><GameCard /></SwiperSlide>
-                    <SwiperSlide><GameCard /></SwiperSlide>
-                    <SwiperSlide><GameCard /></SwiperSlide>
-                    <SwiperSlide><GameCard /></SwiperSlide>
-                    <SwiperSlide><GameCard /></SwiperSlide>
+                {/* {
+                    games.map(game => <SwiperSlide key={games.id}><GameCard /></SwiperSlide>)
+                }    */}
+                    
+
                 </Swiper>
             </section>
         </>
