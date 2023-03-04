@@ -1,10 +1,10 @@
-import React from "react"
-import Header from "../components/organism/header"
-import Jumbotron from "../components/organism/jumbotron"
-import Sale from "../components/organism/Sale"
-import GamePost from "../components/organism/GamePosts"
-import FreeGames from "../components/organism/FreeGames"
-import GameWithStatus from "../components/organism/GameWithStatus"
+import React from "react";
+import Header from "../components/organism/header";
+import Jumbotron from "../components/organism/jumbotron";
+import Sale from "../components/organism/Sale";
+import GamePost from "../components/organism/GamePosts";
+import FreeGames from "../components/organism/FreeGames";
+import GameWithStatus from "../components/organism/GameWithStatus";
 
 const Discover = () => {
   return (
