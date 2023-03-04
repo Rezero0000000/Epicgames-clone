@@ -10,7 +10,7 @@ import 'swiper/css';
 
 const Jumbotron = () => {
 
-    const [games, setGames] = useState([])
+    const [games, setGames] = useState([]);
 
     const getGames = async () => {
         try {
