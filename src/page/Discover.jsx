@@ -20,7 +20,7 @@ const Discover = () => {
       <section className="mt-16">
         <GamePost />
       </section>
-      <section className="md:px-12 lg:px-20 xl:px-32  mt-16">
+      <section className="md:px-12 lg:px-20 xl:px-36  mt-16">
         <FreeGames />
       </section>
     </>

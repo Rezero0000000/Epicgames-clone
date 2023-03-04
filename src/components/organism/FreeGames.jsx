@@ -21,17 +21,16 @@ const FreeGames = () => {
 
     return (
         <>
-            <div className="bg-[#2F2F2F] ">
-                <div className="flex text-white justify-between">
-                    <h2>Free Games</h2>
-                    <button className="border border-white rounded-md px-3 text-sm py-2 font-semibold">VIEW MORE</button>
+            <div className="bg-[#2F2F2F] py-5 px-5 lg:px-8">
+                <div className="flex text-white justify-between ">
+                    <h2 className="text-xl">Free Games</h2>
+                    <button className="border border-white rounded-md px-5 text-[11.5px] py-2 font-semibold">VIEW MORE</button>
                 </div>
 
                 <Swiper
                     modules={[Pagination, Scrollbar]}
-                    slidesPerView={3}
                     pagination={{ clickable: true }}
-                    spaceBetween={30}
+                    spaceBetween={20}
                     breakpoints= {{
                         0: {
                         slidesPerGroup: 1,
@@ -43,15 +42,15 @@ const FreeGames = () => {
                         },
                         768: {
                         slidesPerGroup: 2,
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                         },
                         1024: {
                         slidesPerGroup: 3,
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                         },
                         1280: {
                         slidesPerGroup: 5,
-                        slidesPerView: 5,
+                        slidesPerView: 3,
                         },
                     }}
                     scrollbar={{ draggable: true }}
@@ -59,9 +58,9 @@ const FreeGames = () => {
                         {
                             games.map(game => {
                                 return <SwiperSlide key={game.id}>
-                                        <div className="w-[23rem] mt-7 text-white text-sm">
+                                        <div className=" mt-7 text-white text-sm w-full">
                                             <div className="">
-                                                <img src={game.image} className="rounded-t-lg" alt="" />
+                                                <img src={game.image} className="rounded-t-md" alt="" />
                                                 <div className="bg-[#007DFC] rounded-b-lg text-center font-bold py-1">FREE NOW</div>
                                             </div>
                                             <div className="mt-7">
