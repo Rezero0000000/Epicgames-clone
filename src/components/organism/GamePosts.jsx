@@ -1,25 +1,63 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Pagination, Scrollbar } from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
 import GameCardPost from "../molecules/GameCardPost";
 
 const GamePost = () => {
-    return (
-        <>      
-            <div className="w-full h-full">
+    const [games, setGames] = useState([]);
 
-            <Swiper
+    const getGames = async () => {
+        try {
+            const fetchGames = await fetch("/data/games.json");
+            const jsonGames  = await fetchGames.json();
+            setGames(jsonGames);
+        }
+        catch (e) {
+            console.log("something wrong")
+        }
+    }
+
+    useEffect(() => {
+        getGames();
+    },[]);
+
+    return (
+
+        <>      
+            <div className="w-full h-full md:px-12 lg:px-20 xl:px-32 ">
+
+                 <Swiper
                     modules={[Pagination, Scrollbar]}
                     spaceBetween={20}
-                    slidesPerView={1}
+                    slidesPerView={3}
+                    breakpoints= {{
+                        0: {
+                        slidesPerGroup: 1,
+                        slidesPerView: 1,
+                        },
+                        480: {
+                        slidesPerGroup: 1,
+                        slidesPerView: 2,
+                        },
+                        768: {
+                        slidesPerGroup: 2,
+                        slidesPerView: 2,
+                        },
+                        1024: {
+                        slidesPerGroup: 2,
+                        slidesPerView: 3,
+                        },
+                        1280: {
+                        slidesPerGroup: 5,
+                        slidesPerView: 3,
+                        },
+                    }}
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
                 >
-                    <SwiperSlide><GameCardPost /></SwiperSlide>
-                    <SwiperSlide><GameCardPost /></SwiperSlide>
-                    <SwiperSlide><GameCardPost /></SwiperSlide>
-                    <SwiperSlide><GameCardPost /></SwiperSlide>
-                    <SwiperSlide><GameCardPost /></SwiperSlide>
+                   {
+                    games.map(game => <SwiperSlide key={game.id}><GameCardPost title={game.title} image={game.image}/></SwiperSlide>)
+                   }
                 </Swiper>
             </div>
         </>

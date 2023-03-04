@@ -23,7 +23,7 @@ const Sale = () => {
 
     return (
         <>
-            <section className="text-white mt-[4.5rem] md:px-20 lg:pl-32 lg:pr-36">
+            <section className="text-white mt-[4.5rem] md:px-12 lg:pl-20 xl:pl-32 xl:pr-48 lg:pr-36">
                 <div className="px-7">
                     <p>Game On Sale</p>
                 </div>
@@ -35,7 +35,7 @@ const Sale = () => {
                     breakpoints= {{
                         0: {
                         slidesPerGroup: 1,
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                         },
                         480: {
                         slidesPerGroup: 1,
@@ -43,7 +43,7 @@ const Sale = () => {
                         },
                         768: {
                         slidesPerGroup: 2,
-                        slidesPerView: 3,
+                        slidesPerView: 4,
                         },
                         1024: {
                         slidesPerGroup: 3,
