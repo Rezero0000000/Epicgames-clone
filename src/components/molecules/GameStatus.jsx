@@ -16,8 +16,6 @@ const GameStatus = () => {
     useEffect(() => {
         getGames();
     }, []);
-    
-
     return (
         <>
             <div className="">

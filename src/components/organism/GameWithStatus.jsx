@@ -48,8 +48,6 @@ const GameWithStatus = () => {
                     <SwiperSlide ><GameStatus /></SwiperSlide> 
                   </Swiper>
             </div>
-                
-           
         </>
     )
 }

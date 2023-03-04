@@ -6,6 +6,7 @@ import GamePosts from "../components/organism/GamePosts";
 import FreeGames from "../components/organism/FreeGames";
 import GameWithStatus from "../components/organism/GameWithStatus";
 import BrowseCard from "../components/organism/BrowseCard";
+import Footer from "../components/organism/Footer";
 
 const Discover = () => {
   return (
@@ -33,6 +34,9 @@ const Discover = () => {
       </section>
       <section className="md:px-12 lg:px-20 xl:px-32 mt-16 lg:py-20">
         <BrowseCard/>
+      </section>
+      <section>
+        <Footer />
       </section>
     </>
   )
