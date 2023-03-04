@@ -4,7 +4,7 @@ import Jumbotron from "../components/organism/jumbotron"
 import Sale from "../components/organism/Sale"
 import GamePost from "../components/organism/GamePosts"
 import FreeGames from "../components/organism/FreeGames"
-import GameStatus from "../components/molecules/GameStatus"
+import GameWithStatus from "../components/organism/GameWithStatus"
 
 const Discover = () => {
   return (
@@ -25,7 +25,7 @@ const Discover = () => {
         <FreeGames />
       </section>
       <section className="text-white md:px-12 lg:px-20 xl:px-36  py-16">
-        <GameStatus />
+        <GameWithStatus />
       </section>
     </>
   )
