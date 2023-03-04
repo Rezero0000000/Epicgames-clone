@@ -20,7 +20,7 @@ const Discover = () => {
       <section className="mt-16">
         <GamePost />
       </section>
-      <section className="bg-[#2F2F2F] px-7 py-5 mt-16">
+      <section className="md:px-12 lg:px-20 xl:px-32  mt-16">
         <FreeGames />
       </section>
     </>
