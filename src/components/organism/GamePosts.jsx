@@ -3,8 +3,9 @@ import { Pagination, Scrollbar } from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
 import GameCardPost from "../molecules/GameCardPost";
 
-const GamePost = () => {
+const GamePosts = (props) => {
     const [games, setGames] = useState([]);
+    const {small, large} = props
 
     const getGames = async () => {
         try {
@@ -24,7 +25,7 @@ const GamePost = () => {
     return (
 
         <>      
-            <div className="w-full h-full md:px-12 lg:px-20 xl:px-32 ">
+            <div className="w-full h-full  ">
 
                  <Swiper
                     modules={[Pagination, Scrollbar]}
@@ -37,19 +38,19 @@ const GamePost = () => {
                         },
                         480: {
                         slidesPerGroup: 1,
-                        slidesPerView: 2,
+                        slidesPerView: small,
                         },
                         768: {
                         slidesPerGroup: 2,
-                        slidesPerView: 2,
+                        slidesPerView: small,
                         },
                         1024: {
                         slidesPerGroup: 2,
-                        slidesPerView: 3,
+                        slidesPerView: large,
                         },
                         1280: {
                         slidesPerGroup: 5,
-                        slidesPerView: 3,
+                        slidesPerView: large,
                         },
                     }}
                     pagination={{ clickable: true }}
@@ -64,4 +65,4 @@ const GamePost = () => {
     )
 }
 
-export default GamePost
+export default GamePosts
