@@ -11,17 +11,21 @@ import 'swiper/css';
 const Jumbotron = () => {
 
     const [games, setGames] = useState([])
-    useEffect(() => {
-        const getGames = async () => {
+
+    const getGames = async () => {
+        try {
             const fetchGames = await fetch("/data/games.json");
-            const jsonGames = await fetchGames.json();
+            const jsonGames  = await fetchGames.json();
             setGames(jsonGames);
         }
+        catch (e) {
+            console.log("something wrong")
+        }
+    }
+    useEffect(() => {
         getGames();
-    },[]);
-
+    }, []);
     
-
     return (
         <>
             <div className="md:flex justify-center">

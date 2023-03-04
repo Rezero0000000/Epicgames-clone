@@ -6,15 +6,20 @@ import GameCard from "../molecules/GameCard";
 const Sale = () => {
     const [games, setGames] = useState([]);
 
-    useEffect(() => {
-        const getGames = async () => {
+    const getGames = async () => {
+        try {
             const fetchGames = await fetch("/data/games.json");
             const jsonGames  = await fetchGames.json();
             setGames(jsonGames);
         }
+        catch (e) {
+            console.log("something wrong")
+        }
+    }
 
+    useEffect(() => {
         getGames();
-    }, []);
+    },[]);
 
     return (
         <>
@@ -52,11 +57,9 @@ const Sale = () => {
                     scrollbar={{ draggable: true }}
                     className=" mt-7 h-full"
                 >
-                {/* {
-                    games.map(game => <SwiperSlide key={games.id}><GameCard /></SwiperSlide>)
-                }    */}
-                    
-
+                {
+                    games.map(game => <SwiperSlide key={game.id}><GameCard title={game.title} image={game.image} /></SwiperSlide>)
+                }   
                 </Swiper>
             </section>
         </>
