@@ -23,4 +23,4 @@ const Twitter = () => {
     )
 }
 
-export default Twitter
+export default Twitter;

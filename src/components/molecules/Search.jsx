@@ -18,7 +18,7 @@ const Search = () => {
 
     return (
         <>
-            <div className="bg-[#121212]  bg-opacity-[0.93] fixed top-12 w-full lg:py-3">
+            <div className="bg-[#121212]   fixed md:px-5 top-12 w-full md:py-1 lg:py-3">
                 <div className="backdrop-blur-sm text-white py-7 flex lg:py-4 justify-center lg:justify-start lg:px-28 xl:px-48 items-center text-[16px] w-full text-center top-14">
                     <div className="absolute left-8 lg:static">
                         <div className="lg:absolute lg:mt-3 lg:ml-4">
@@ -29,17 +29,20 @@ const Search = () => {
                         </form>
                     </div>
 
-                    <div className="lg:hidden " onClick={openFilter}>
-                        <p className="">Discover</p>
-                        <ArrowDown />
+                    <div className="lg:hidden flex items-center" onClick={openFilter}>
+                        <p className="mr-[2px] text-[#939393]">Discover</p>
+                        <div className={`${open ? 'rotate-180' : 'rotate-0'}`}>
+                            <ArrowDown />
+                        </div>
                     </div>
                     <div className="hidden lg:block lg:ml-12">
                         <ul className="text-center flex text-white ">
-                            {
+                            {/* {
                                 links.map( link => (
                                   link.id == 2 ? <li className="font-normal mr-10 text-[#858585]" key={link.id}>{link.title}</li> : <li className="font-normal mr-10" key={link.id}>{link.title}</li>
                                 ))
-                            }
+                            } */}
+                            <li className="py-5 text-[#8C8C8C] border-t border-[#2A2A2A]" >Discover</li>
                         </ul>
                     </div>
            

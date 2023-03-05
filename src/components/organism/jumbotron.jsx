@@ -25,7 +25,8 @@ const Jumbotron = () => {
     useEffect(() => {
         getGames();
     }, []);
-    
+
+    console.log(games)
     return (
         <>
             <div className="md:flex justify-center">
