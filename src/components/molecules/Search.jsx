@@ -18,14 +18,14 @@ const Search = () => {
 
     return (
         <>
-            <div className="bg-[#121212]   fixed md:px-5 top-12 w-full md:py-1 lg:py-3">
-                <div className="backdrop-blur-sm text-white py-7 flex lg:py-4 justify-center lg:justify-start lg:px-28 xl:px-48 items-center text-[16px] w-full text-center top-14">
+            <div className="bg-[#121212]   fixed md:px-5 top-12 w-full ">
+                <div className="backdrop-blur-sm text-white py-7 flex lg:py-3 justify-center lg:justify-start lg:px-28 xl:px-48 items-center text-[16px] w-full text-center top-14">
                     <div className="absolute left-8 lg:static">
                         <div className="lg:absolute lg:mt-3 lg:ml-4">
                             <SearchIcon />
                         </div>
                         <form className="hidden lg:block">
-                            <input type="text" placeholder="earch store" className="px-6 bg-[#202020] border-none rounded-full placeholder:pl-7 "/>
+                            <input type="text" placeholder="search store" className="px-6 bg-[#202020] border-none rounded-full placeholder:pl-7 "/>
                         </form>
                     </div>
 
