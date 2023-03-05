@@ -2,6 +2,8 @@ import React, {useState, useEffect} from "react";
 import { Pagination, Scrollbar } from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
 
+import Gift from "../icons/Gift";
+
 const FreeGames = () => {
     const [games, setGames] = useState([]);
 
@@ -21,9 +23,12 @@ const FreeGames = () => {
 
     return (
         <>
-            <div className="bg-[#2F2F2F] py-5 px-5 lg:px-8">
+            <div className="bg-[#2F2F2F] pt-5 px-5 lg:px-8">
                 <div className="flex text-white justify-between ">
-                    <h2 className="text-xl">Free Games</h2>
+                    <div className="flex items-center">
+                        <Gift />
+                        <h2 className="text-[1.2rem]  ml-3">Free Games</h2>
+                    </div>
                     <button className="border border-white rounded-md px-5 text-[11.5px] py-2 font-semibold">VIEW MORE</button>
                 </div>
 
