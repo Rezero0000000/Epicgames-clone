@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import SearchIcon from "../icons/SearchIcon";
+import ArrowDown from "../icons/ArrowDown";
 
 const Search = () => {
 
@@ -30,6 +31,7 @@ const Search = () => {
 
                     <div className="lg:hidden " onClick={openFilter}>
                         <p className="">Discover</p>
+                        <ArrowDown />
                     </div>
                     <div className="hidden lg:block lg:ml-12">
                         <ul className="text-center flex text-white ">
