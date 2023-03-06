@@ -40,7 +40,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="mt-7">
+                <div className="mt-7 border-b pb-7 border-[#363636]">
                     <div className="text-[#B6B6B6]">
                         <h1>Made By Epic Games</h1>
                     </div>
@@ -58,15 +58,15 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="mt-7">
-                    <p className="text-[12px] text-[#B6B6B6]">
-                    © 2021, Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Fortnite, the Fortnite logo, Unreal, Unreal Engine, the Unreal Engine logo, Unreal Tournament, and the Unreal Tournament logo are trademarks or registered trademarks of Epic Games, Inc. in the United States of America and elsewhere. Other brands or product names are the trademarks of their respective owners. Non-US transactions through Epic Games International, S.à r.l.
+                <div className="mt-10">
+                    <p className="text-[12.5px] text-[#B5B5B5]">
+                        © 2021, Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Fortnite, the Fortnite logo, Unreal, Unreal Engine, the Unreal Engine logo, Unreal Tournament, and the Unreal Tournament logo are trademarks or registered trademarks of Epic Games, Inc. in the United States of America and elsewhere. Other brands or product names are the trademarks of their respective owners. Non-US transactions through Epic Games International, S.à r.l.
                     </p>
                 </div>
-                <div className="mt-7">
+                <div className="mt-7  flex flex-col items-center text-[#CACACA]">
                     <a href="" >Terms of Service</a>
-                    <a href="" className="ml-5">Privacy Policy</a>
-                    <a href="" className="ml-5">Store Refund Policy</a>
+                    <a href="" className="mt-5">Privacy Policy</a>
+                    <a href="" className="mt-5">Store Refund Policy</a>
                 </div>
             </div>
         </>
