@@ -2,14 +2,20 @@ import React from "react";
 import Facebook from "../icons/Facebook";
 import Twitter from "../icons/Twitter";
 import Youtube from "../icons/Youtube";
+import ArrowUp from "../icons/ArrowUp";
 
 const Footer = () => {
     return (
         <>
-            <div className="flex gap-2">
-                <Facebook/>
-                <Twitter />
-                <Youtube/>
+            <div className="flex justify-between">
+                <div className="flex gap-2">
+                    <Facebook/>
+                    <Twitter />
+                    <Youtube/>
+                </div>
+                <div className="border-2 border-[#B6B6B6] border-white pt-2 px-[0.4rem] pb-1">
+                    <ArrowUp />
+                </div>
             </div>
             <div className="mt-7">
                 <div>
