@@ -7,7 +7,7 @@ import ArrowUp from "../icons/ArrowUp";
 const Footer = () => {
     return (
         <>
-            <div className="text-[12px]">
+            <div className="text-[13.5px]">
                 <div className="flex justify-between">
                     <div className="flex gap-2">
                         <Facebook/>
@@ -22,7 +22,7 @@ const Footer = () => {
                     <div className="text-[#B6B6B6]">
                         <h1>Resources</h1>
                     </div>
-                    <div className="flex gap-5 mt-3">
+                    <div className="flex grid grid-cols-2 gap-y-2 gap-x-5 mt-3">
                         <ul>
                             <li><p>Support-A-Content</p></li>
                             <li><p>Publish On Epic Games</p></li>
@@ -59,7 +59,7 @@ const Footer = () => {
                 </div>
 
                 <div className="mt-7">
-                    <p>
+                    <p className="text-[12px] text-[#B6B6B6]">
                     © 2021, Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Fortnite, the Fortnite logo, Unreal, Unreal Engine, the Unreal Engine logo, Unreal Tournament, and the Unreal Tournament logo are trademarks or registered trademarks of Epic Games, Inc. in the United States of America and elsewhere. Other brands or product names are the trademarks of their respective owners. Non-US transactions through Epic Games International, S.à r.l.
                     </p>
                 </div>
