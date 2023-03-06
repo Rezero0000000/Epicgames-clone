@@ -52,4 +52,4 @@ const GameWithStatus = () => {
     )
 }
 
-export default GameWithStatus;
+export default GameWithStatus
