@@ -17,7 +17,7 @@ const GameCard = (props) => {
                     <div className="flex items-center justify-between mt-4 text-[12px]">
                         <button className="px-2 py-1 text-[11px] rounded-[0.25rem] bg-[#007DFC]">-35%</button>
                         <div>
-                            <p className="text-[#8B8B8B]">IDR 250.000</p>
+                            <p className="text-[#8B8B8B] line-through">IDR 250.000</p>
                             <p>IDR 161.850</p>
                         </div>
                     </div>
