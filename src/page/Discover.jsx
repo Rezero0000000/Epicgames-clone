@@ -35,7 +35,7 @@ const Discover = () => {
       <section className="md:px-12 lg:px-20 xl:px-32 mt-16 lg:py-20">
         <BrowseCard/>
       </section>
-      <section className="px-5 py-10 md:px-12 lg:px-20 xl:px-32 mt-16 lg:py-20 bg-[#202020] text-[#B6B6B6]">
+      <section className="px-5 py-10 md:px-12 lg:px-20 xl:px-32 mt-16 lg:py-20 bg-[#202020] text-white">
         <Footer />
       </section>
     </>
