@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "inter";
+  src: url("/inter.ttf");
+}
+
+@font-face {
+  font-family: "opensans";
+  src: url("/opensans.ttf");
+}
+
 @layer utilities {
     .shadow-top {
       box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);

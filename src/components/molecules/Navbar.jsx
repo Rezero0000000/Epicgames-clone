@@ -7,7 +7,8 @@ const Navbar = () => {
     
   const links = [
     { id: 1, name: "STORE", url: "/" },
-    { id: 2, name: "Support", url: "/" },
+    { id: 2, name: "DISTRIBUTION", url:"/"},     
+    { id: 3, name: "SUPORT", url: "/" }
   ]
 
   const [open, setOpen] = useState(true)
@@ -23,14 +24,14 @@ const Navbar = () => {
                     <img src="/images/eg-logo-light.svg" className="w-[1.93rem] opacity-[0.85]"/>
                 </div>
                 <div className={`nav-menu md:translate-x-0 ${open? "translate-x-full" : "translate-x-0"} `}>
-                  <ul className="nav-menu-list items-center text-sm md:text-[12px] mt-3 md:mt-0">
-                    {
+                  <ul className="nav-menu-list tracking-widest items-center text-[13.7px] md:text-[12px] mt-3 md:mt-0">
+                          {
                       links.map(link => (
-                        link.id == 1 ? <li key={link.id} className="pl-7 md:pl-2 mb-3 md:mb-0 text-[#fff] md:w-auto w-full">{link.name}</li> : <li key={link.id} className="pl-7  text-white md:text-[#B8B8B8] md:border-none border-t w-full py-3 md:w-auto border-[#343434]">{link.name}</li>
+                        link.id == 1 ? <li key={link.id} className="pl-7 md:pl-2 mb-3 md:mb-0 text-[#E7E7E7] md:w-auto w-full">{link.name}</li> : <li key={link.id} className="pl-7  text-white md:text-[#B8B8B8] md:border-none border-t w-full py-3 md:w-auto border-[#343434]">{link.name}</li>
                       ))
                     }
                      <li className="pl-7 md:pl-0 md:ml-7 mb-3 md:mb-0 text-white md:text-[#B8B8B8] md:w-auto py-3 w-full">
-                      <p className="md:border-l md:pl-6 md:py-[0.35rem] md:border-[#A7A7A7]">
+                      <p className="md:border-l font-opensans md:pl-6 md:py-[0.35rem] md:border-[#A7A7A7]"> 
                      UNREAL ENGINE
                       </p></li>
                   </ul>

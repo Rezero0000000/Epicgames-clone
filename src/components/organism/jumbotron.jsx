@@ -26,7 +26,6 @@ const Jumbotron = () => {
         getGames();
     }, []);
 
-    console.log(games)
     return (
         <>
             <div className="md:flex justify-center">
