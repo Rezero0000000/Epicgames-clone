@@ -18,10 +18,10 @@ const Search = () => {
 
     return (
         <>
-            <div className="bg-[#121212]   fixed md:px-5 top-12 w-full ">
+            <div className="bg-[#121212] fixed top-12 w-full ">
                 <div className="backdrop-blur-sm text-white py-7 flex lg:py-3 justify-center lg:justify-start lg:px-28 xl:px-48 items-center text-[16px] w-full text-center top-14">
                     <div className="absolute left-8 lg:static">
-                        <div className="lg:absolute lg:mt-3 lg:ml-4">
+                        <div className="lg:absolute mt-1 lg:mt-3 lg:ml-4">
                             <SearchIcon />
                         </div>
                         <form className="hidden lg:block">
@@ -30,7 +30,7 @@ const Search = () => {
                     </div>
 
                     <div className="lg:hidden flex items-center" onClick={openFilter}>
-                        <p className="mr-[2px] text-[#939393]">Discover</p>
+                        <p className="mr-[2px] text-white">Discover</p>
                         <div className={`${open ? 'rotate-180' : 'rotate-0'}`}>
                             <ArrowDown />
                         </div>
@@ -57,8 +57,8 @@ const Search = () => {
                         }
                     </ul>
                 </div>
-                <button className={`lg:hidden w-full h-[39rem] aboslute  search-background ${open ? "block"  : "hidden" }`}></button>
             </div>
+            <button onClick={openFilter} className={`lg:hidden w-full h-[45rem] bg-black  aboslute bg-opacity-80 ${open ? "block"  : "hidden" }`}></button>
         </>
     )
 }
